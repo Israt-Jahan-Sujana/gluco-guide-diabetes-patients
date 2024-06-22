@@ -1,8 +1,12 @@
 "use client";
+
+import LoginForm from "@/components/ui/LoginForm";
+
 //import Form from "@/components/ui/Form";
 export default function LoginPage() {
   return (
     <div className="max-h-screen flex flex-col justify-center h-screen items-center bg-gradient-to-b from-indigo-200 via-purple-100 to-pink-50">
+      <LoginForm />
       {/* <Form /> */}
     </div>
     //<div className="min-h-screen flex items-center justify-center">
