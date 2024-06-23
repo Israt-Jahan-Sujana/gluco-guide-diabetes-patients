@@ -2,16 +2,30 @@ import { IconNames } from "@/types"
 import {
   BellIcon,
   CalenderIcon,
+  CapsulePillIcon,
   ChartGraphIcon,
   ChartPieIcon,
+  FireIcon,
   GlucoGuideLogo,
   HeartIcon,
+  HeartOrganIcon,
+  HeartWithPulseIcon,
   HomeIcon,
+  HumanCyclingIcon,
+  HumanIcon,
+  HumanJogginIcon,
+  HumanYogaIcon,
   LogoutIcon,
+  RightArrowIcon,
+  RotatedArrowIcon,
   SearchIcon,
   SettingsIcon,
+  SoupBowlIcon,
+  TabletPillIcon,
   ThreePeopleIcon,
   TwoPeopleIcon,
+  UpArrowIcon,
+  WeightMachineIcon,
   WrittenPageIcon,
 } from "./svg"
 
@@ -75,6 +89,76 @@ export default function Icon({ name, className, pathClassName }: Props) {
 
     case "gluco-guide":
       return <GlucoGuideLogo className={className} />
+
+    case "rotated-arrow":
+      return (
+        <RotatedArrowIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "fire":
+      return <FireIcon className={className} pathClassName={pathClassName} />
+
+    case "human":
+      return <HumanIcon className={className} pathClassName={pathClassName} />
+
+    case "heart-organ":
+      return (
+        <HeartOrganIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "up-arrow":
+      return <UpArrowIcon className={className} pathClassName={pathClassName} />
+
+    case "right-arrow":
+      return (
+        <RightArrowIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "capsule-pill":
+      return (
+        <CapsulePillIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "tablet-pill":
+      return (
+        <TabletPillIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "human-jogging":
+      return (
+        <HumanJogginIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "human-cycling":
+      return (
+        <HumanCyclingIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "soup-bowl":
+      return (
+        <SoupBowlIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "human-yoga":
+      return (
+        <HumanYogaIcon className={className} pathClassName={pathClassName} />
+      )
+
+    case "heart-w-pulse":
+      return (
+        <HeartWithPulseIcon
+          className={className}
+          pathClassName={pathClassName}
+        />
+      )
+
+    case "weight-machine":
+      return (
+        <WeightMachineIcon
+          className={className}
+          pathClassName={pathClassName}
+        />
+      )
 
     default:
       return <div />
